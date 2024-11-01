@@ -1,0 +1,253 @@
+.mwd-admin-notice {
+	background: #fff;
+	border-top: 4px;
+	display: block;
+	min-height: 68px;
+	padding: 10px 40px 10px 125px;
+	position: relative;
+}
+.mwd-admin-notice a {
+	color: #10738B;
+}
+.mwd-notice-logo {
+	clear: both;
+	content: "";
+	display: block;
+	background: url(../images/icons.png) no-repeat -423px -322px;
+	width: 110px;
+	height: 81px;
+	position: absolute;
+	top: calc(-50% + 80px);
+	left: 5px;
+}
+.mwd-admin-notice > .dashicons {
+	color: #424242;
+	position: absolute;
+	right: 20px;
+	top: 40%;
+}
+.mwd-notice-title {
+	font-size: 24px;
+	margin: 0;
+}
+.mwd-notice-body {
+	font-weight: normal;
+	margin: 5px 0;
+}
+.mwd-notice-body:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+.mwd-notice-body li {
+	float: left;
+	margin-right: 20px;
+}
+.mwd-notice-body .dashicons {
+	font-size: 17px;
+}
+.mwd-blue {
+	color: #10738B;
+}
+
+
+
+/* -------------------------------- mailchimp free ------------------------ */
+
+.mailchimp{
+	background: url("https://web-dorado.com/images/mailchimp/deals/2.png") no-repeat right top; 
+	width: 100%;
+	height: 100px;
+	background-position: 0 -15px;
+	background-size: 100% 120px;
+	z-index: 10000;
+	overflow: hidden;
+}
+
+.hidest{
+	display: none;
+}
+
+.colored{
+	color: #FFC600;
+}
+
+.per_coupon{
+	width: 4px;
+	height: 95px;
+	background: #ff000c;
+	position: absolute;
+	top: -30px;
+	-ms-transform: rotate(35deg);
+	-webkit-transform: rotate(35deg);
+	transform: rotate(35deg);
+	left: 30px;
+}
+
+.personal{
+	font-size: 22px;
+	font-family: Oswald;
+}
+
+.personal li{
+	list-style: none;
+}
+
+.personal.coupon_code{
+	font-size: 29px;
+	font-weight: 600;
+	font-family: Oswald;
+	position: relative;
+	text-align: left;
+	top: -5px;
+	white-space: nowrap;
+}
+
+.mailchimp_img .respons,
+.mailchimp_img.respons{
+	display: none;
+}
+
+.mailchimp_container{
+	width: 30%; 
+	margin: 0px auto; 
+	color: #fff;
+	float: left;
+	display: table;
+	height: 100px;
+}
+
+.not_show_hide.res_hide.personal{
+	width: 1024px;
+	font-size: 19px;
+}
+
+.mailchimp_container.coupon{
+	width: 65%;
+}
+
+.not_show_hide.personal.colored{
+	font-weight: 600;
+}
+
+.mailchimp_container li{
+	list-style: none;
+	display: table-cell;
+	vertical-align: middle;
+	padding-right: 11px;
+}
+
+.mailchimp_img a{
+	text-decoration: none;
+	background-image: url(https://web-dorado.com/images/mailchimp/deals/4.png);
+	width: 200px;
+	height: 75px;
+	color: #fff !important;
+	display: inline-block;
+	background-position: 13px -87px;
+	background-repeat: no-repeat;
+	text-align: center;
+	-webkit-transition-property: inherit; 
+    transition-property: inherit;
+    -webkit-transition-duration: inherit;
+    transition-duration: inherit;
+    -webkit-transition-timing-function: inherit;
+    transition-timing-function: inherit;
+	
+}
+
+.mailchimp_img a:hover{
+	background: url("https://web-dorado.com/images/mailchimp/deals/4.png"); 
+	background-position: 13px -12px;
+	background-repeat: no-repeat;
+}
+
+.mailchimp_img{
+	width: 125px;
+	text-align: left;
+}
+
+.mailchimp_img img{
+	position: relative;
+	z-index: 2;
+	top: 10px;
+}
+
+.mailchimp_coupon{
+	text-align: right;
+	width: 40%;
+}
+
+@-moz-document url-prefix() {
+	.mailchimp_sale > span,
+	.mailchimp_coupon > span{
+		position: relative;
+		top: -38px;
+	}
+	
+	.mailchimp_img.not_show_hide img{
+		top: -5px !important;			
+	}
+	
+	.mailchimp_img a{
+		top: -38px;			
+	}
+	
+	.mailchimp_coupon.not_show_hide > span{
+		top: -35px;
+	} 
+}
+
+@media screen and (min-width: 828px) and  (max-width: 1290px){
+	.mailchimp_img.coupon_img{
+		width: 0;
+	}
+	
+}
+
+@media screen and  (max-width: 1280px){
+	.res_hide{
+		display: none !important;
+	}
+	.mailchimp_container{
+		width: 100% !important;
+		padding: 0 0 0 10px;
+	}
+	
+	.personal.coupon_code{
+		width: 20%;
+	}
+	
+	.mailchimp_coupon{
+		width: 240px;
+	}
+	.personal {
+		font-size: 20px;
+	}
+}
+
+@media screen and  (max-width: 827px){
+
+	.not_show_hide.personal{
+		display: none !important;
+	}
+	
+	.personal.coupon_code{
+		text-align: center !important;
+	}
+	
+	.hidest{
+		display: block;
+		font-size: 14px;
+	}
+}
+
+@media screen and  (max-width: 568px){
+	.personal.coupon_code{
+		display: none !important;
+	}
+}
+
+.notice, div.error, div.updated {
+	margin: 25px 20px 0 2px !important;
+}
